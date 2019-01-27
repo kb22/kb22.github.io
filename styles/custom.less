@@ -1,3 +1,5 @@
+@import "variables.less";
+
 /* Parent custom styles */
 html, body {
   height: 100%;
@@ -29,7 +31,9 @@ blockquote-footer {
   color: white;
 }
 
-
+#content {
+  display: none;
+}
 /* Main page styles */
 #stage {
   background: url('https://images.unsplash.com/uploads/1413595244012e81f5c69/de0cc225?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=b019868c314903110f248b3a5cbd36e4&auto=format&fit=crop&w=1050&q=80') center center no-repeat;
@@ -61,9 +65,27 @@ blockquote-footer {
   overflow: hidden;
 }
 
+#projects {
+  background: #262f36;
+  color: white;
+}
+
+#projects h2 {
+  color: white;
+}
+
+#projects-list {
+  h4, p {
+    color: @themeColor;
+  }
+  a, a:hover, a:visited {
+    color: @themeColor;
+  }
+}
+
 /* Footer styles */
 #main-footer {
-  background: #262f36;
+  background: @themeColor;
   color: white;
   padding: 3rem 0 2rem 0;
 }

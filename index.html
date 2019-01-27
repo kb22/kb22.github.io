@@ -5,63 +5,92 @@
     <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico" />
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="styles/custom.css">
+    <link rel="stylesheet/less" href="styles/loader.less">
+    <link rel="stylesheet/less" type="text/css" href="styles/custom.less">
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/less.js/3.9.0/less.min.js" ></script>
+    <script src="scripts/github.js"></script>
   </head>
   <body>
-    <nav class="navbar navbar-light navbar-expand-lg fixed-top bg-light">
-      <div class="container-fluid">
-        <span class="navbar-brand">Karan Bhanot</span>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbar">
-          <div class="navbar-nav ml-auto">
-            <a class="nav-item nav-link" href="#about">About</a>
-          </div>
-        </div>
-      </div>
-    </nav>
-
-    <div id="stage">
-      <div id="stage-caption">
-        <h1 class="display-3">Karan Bhanot</h1>
-        <p>Machine Learning Enthusiast - Front-End Developer - Computer Science Engineer</span></p>
-        <a href="" target="_blank"></a>
-      </div>
+    <div id="loader">
+      <div class="loader"></div>
     </div>
-
-    <section id="about">
-      <div class="container">
-        <div class="feature-content">
-          <div class="row">
-            <div class="col-lg-8 offset-lg-2">
-              <h6>About Me</h6>
-              <h2>Karan Bhanot</h2>
-              <p class="lead">I am a Machine Learning student and a Software Developer</p>
-              <p>I have worked on many Machine Learning and Data Analysis projects including Color Identification in Images, Activity Recognition, and Cervical Prediction. I have extensive knowledge of Machine Learning algorithms and have worked with <code>Python</code> and <code>Jupyter Notebooks</code>.
-              <p>Over the course of my graduate studies, I have worked on several projects involving Human Resource Departmant Management System, Blood Bank Management System, and Dispatch Scheduler using <code>HTML, CSS, JavaScript</code> and <code>Bootstrap</code>.</p>
-              <p>Furthermore, I have developed Android application for Health Department on awareness regarding Dengue Virus using <code>Java</code>.
+    <div id="content">
+      <nav class="navbar navbar-light navbar-expand-lg fixed-top bg-light">
+        <div class="container-fluid">
+          <span class="navbar-brand">Karan Bhanot</span>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbar">
+            <div class="navbar-nav ml-auto">
+              <a class="nav-item nav-link" href="#about">About</a>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </nav>
 
-    <footer id="main-footer">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6">
-            Developed and coded by <br>
-            Karan Bhanot
-          </div>
-          <div class="col-md-4 offset-lg-2">
-            <h6 id="social-heading">Social</h6>
-            <a href="https://github.com/kb22" target="_blank"><i class="fa fa-github social"></i></a>&nbsp;&nbsp;<a href="https://www.linkedin.com/in/bhanotkaran22/" target="_blank"><i class="fa fa-linkedin social"></i></a>&nbsp;&nbsp;<a href="https://medium.com/@bhanotkaran22" target="_blank"><i class="fa fa-medium social"></i></a>
-          </div>
+      <div id="stage">
+        <div id="stage-caption">
+          <h1 class="display-3">Karan Bhanot</h1>
+          <p>Machine Learning Enthusiast - Front-End Developer - Computer Science Engineer</span></p>
         </div>
       </div>
-    </footer>
+
+      <section id="about">
+        <div class="container">
+          <div class="feature-content">
+            <div class="row">
+              <div class="col-lg-4" id="profile-image">
+              </div>
+              <div class="col-lg-8">
+                <h6>About Me</h6>
+                <h2>Karan Bhanot</h2>
+                <p class="lead">I am a Machine Learning student and a Software Developer</p>
+                <p>I have worked on many Machine Learning and Data Analysis projects including Color Identification in Images, Activity Recognition, and Cervical Prediction. I have extensive knowledge of Machine Learning algorithms and have worked with <code>Python</code> and <code>Jupyter Notebooks</code>.
+                <p>Over the course of my graduate studies, I have worked on several projects involving Human Resource Departmant Management System, Blood Bank Management System, and Dispatch Scheduler using <code>HTML, CSS, JavaScript</code> and <code>Bootstrap</code>.</p>
+                <p>Furthermore, I have developed Android application for Health Department on awareness regarding Dengue Virus using <code>Java</code>.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects">
+        <div class="container">
+          <div class="feature-content">
+            <div class="row">
+              <div class="col-lg-6 feature-caption">
+                <h6>Projects</h6>
+                <h2>Take a look at my projects on GitHub</h2>
+                <p class="lead" id="projects-count"></p>
+                <a href="https://github.com/kb22" role="button" class="btn btn-outline-light">Go to GitHub</a>
+              </div>
+              <div class="col-lg-6">
+                <h6>Recent GitHub Repos</h6>
+                <div class="list-group" id="projects-list">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer id="main-footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              Developed and coded by <br>
+              <strong>Karan Bhanot</strong>
+            </div>
+            <div class="col-md-4 offset-lg-2">
+              <h6 id="social-heading">Social</h6>
+              <a href="https://github.com/kb22" target="_blank"><i class="fa fa-github social"></i></a>&nbsp;&nbsp;<a href="https://www.linkedin.com/in/bhanotkaran22/" target="_blank"><i class="fa fa-linkedin social"></i></a>&nbsp;&nbsp;<a href="https://medium.com/@bhanotkaran22" target="_blank"><i class="fa fa-medium social"></i></a>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
   </body>
 </html>
