@@ -1,0 +1,97 @@
+/* Parent custom styles */
+html, body {
+  height: 100%;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizelegibility;
+  color: #6c6f73;
+}
+
+h1, h2, h3, h4, h5 {
+  color: #333;
+}
+
+h6 {
+  text-transform: uppercase;
+  font-wright: bold;
+  font-size: 0.8rem;
+  letter-spacing: 0.1rem;
+}
+
+img {
+  max-width: 100%;
+}
+
+blockquote-footer {
+  margin: 1rem;
+  color: white;
+}
+
+
+/* Main page styles */
+#stage {
+  background: url('https://images.unsplash.com/uploads/1413595244012e81f5c69/de0cc225?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=b019868c314903110f248b3a5cbd36e4&auto=format&fit=crop&w=1050&q=80') center center no-repeat;
+  background-size: cover;
+  color: white;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+#stage-caption {
+  margin: 0 auto;
+  max-width: 60rem;
+  font-size: 1.4rem;
+  font-weight: 200;
+  text-align: center;
+}
+
+#stage-caption h1{
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+/* Body styles */
+.feature-content {
+  padding: 8rem 0;
+  overflow: hidden;
+}
+
+/* Footer styles */
+#main-footer {
+  background: #262f36;
+  color: white;
+  padding: 3rem 0 2rem 0;
+}
+
+#main-footer h6{
+  color: white;
+}
+
+#main-footer a{
+  color: white;
+}
+
+.social {
+  font-size: 1.5rem;
+  padding-right: 10px;
+}
+
+/* Support for other screen sizes */
+@media screen and ( min-width: 200px ){
+  
+  .feature-content .row{
+    display: flex;
+    align-items: center;
+  }
+}
+
+@media screen and ( max-width: 768px ){ 
+  #social-heading {
+    margin-top: 10px;
+  }
+}
