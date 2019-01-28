@@ -1,4 +1,11 @@
-const mediumRequest = fetch('https://medium.com/@bhanotkaran22?format=json')
+const mediumRequest = fetch('https://medium.com/@bhanotkaran22')
 .then(function(response) {
-	return response.text();
-})
+	if (!response.ok) {
+       return Promise.reject('Could not fetch user information from Medium');
+    }
+    return response.text();
+}).then(function(text) {
+	return text;
+}).catch(error => {
+	console.log(error);
+});
