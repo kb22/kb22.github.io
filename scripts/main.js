@@ -26,21 +26,12 @@ Promise.all([userRequest, repoRequest, mediumRequest]).then(function(values) {
 	}
 
 	var articlesClapsCount = document.getElementById('articles-clap-count');
+	articlesClapsCount.innerHTML = "I write and share my knowledge about Machine Learning.";
 	var articlesList = document.getElementById('articles-list');
 
 	if (values[2] !== undefined) {
 		var parser = new DOMParser();
 		var htmlDoc = parser.parseFromString(values[2], 'text/html');
-		var clapsClasses = htmlDoc.getElementsByClassName('ds t cj u');
-
-		var totalClaps = 0;
-		for (var i = 0; i < clapsClasses.length; i++) {
-			const clapClass = clapsClasses[i].getElementsByTagName('div')[0];
-			totalClaps += parseInt(clapClass.innerText);
-		}
-
-		articlesClapsCount.innerHTML = "My articles have been clapped over " + totalClaps + " times.";
-
 		var articleClasses = htmlDoc.getElementsByClassName('aw cm eo ep eq eb ea er es ck ax');
 
 		for (var i = 0; i < 5; i++) {
@@ -49,7 +40,6 @@ Promise.all([userRequest, repoRequest, mediumRequest]).then(function(values) {
 	    	articlesList.appendChild(listElement);
 	    }
 	} else {
-		articlesClapsCount.innerHTML = "My articles have been read over many times.";
 		var infoElement = document.createElement('span');
     	infoElement.innerHTML = 'Articles could not be loaded...';
 		articlesList.appendChild(infoElement);
