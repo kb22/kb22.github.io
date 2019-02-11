@@ -30,15 +30,19 @@ Promise.all([userRequest, repoRequest, mediumRequest]).then(function(values) {
 	var articlesList = document.getElementById('articles-list');
 
 	if (values[2] !== undefined) {
-		var parser = new DOMParser();
-		var htmlDoc = parser.parseFromString(values[2], 'text/html');
-		var articleClasses = htmlDoc.getElementsByClassName('aw cm eo ep eq eb ea er es ck ax');
-
-		for (var i = 0; i < 5; i++) {
+	let clapCount = 0;
+	const mediumData = values[2];
+	const posts = mediumData.data.user.profileStreamConnection.stream;
+	for (var i = 0; i < posts.length; i++) {
+		const currPost = posts[i].itemType.post;
+    	clapCount += currPost.clapCount;
+    	if (i < 5) {
 	    	var listElement = document.createElement('li');
-	    	listElement.innerHTML = articleClasses[i].innerHTML
+	    	listElement.innerHTML = currPost.previewContent.bodyModel.paragraphs[1].text;
 	    	articlesList.appendChild(listElement);
-	    }
+    	}
+    }
+	articlesClapsCount.innerHTML = "My articles have been clapped " + clapCount + " times.";
 	} else {
 		var infoElement = document.createElement('span');
     	infoElement.innerHTML = 'Articles could not be loaded...';
