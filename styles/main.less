@@ -1,0 +1,26 @@
+@import "variables.less";
+
+/* Parent styles */
+html {
+  height: 100%;
+}
+
+body {
+  padding-top: 60px;
+  height: calc(100%-60px);
+}
+
+/* Keeping content hidden till loading completes */
+#content {
+  display: none;
+}
+
+/* Navbar styles */
+.navbar {
+  background-color: @themeColor;
+  color: white;
+}
+.navbar-dark .navbar-toggler {
+  color: white;
+  border-color: transparent;
+}

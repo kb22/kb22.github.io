@@ -6,20 +6,18 @@
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet/less" href="styles/loader.less">
-    <link rel="stylesheet/less" type="text/css" href="styles/custom.less">
+    <link rel="stylesheet/less" href="styles/main.less">
+    <link rel="stylesheet/less" type="text/css" href="styles/index.less">
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/less.js/3.9.0/less.min.js" ></script>
-    <script src="scripts/github.js"></script>
-    <script src="scripts/medium.js"></script>
-    <script src="scripts/main.js"></script>
   </head>
   <body>
     <div id="loader">
       <div class="loader"></div>
     </div>
     <div id="content">
-      <nav class="navbar navbar-light navbar-expand-lg fixed-top bg-light">
+      <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
         <div class="container-fluid">
           <span class="navbar-brand">Karan Bhanot</span>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -27,94 +25,34 @@
           </button>
           <div class="collapse navbar-collapse" id="navbar">
             <div class="navbar-nav ml-auto">
-              <a class="nav-item nav-link" href="#about">About</a>
-              <a class="nav-item nav-link" href="#projects">Projects</a>
-              <a class="nav-item nav-link" href="#articles">Articles</a>
+              <a class="nav-item nav-link" href="index.html">Home</a>
             </div>
           </div>
         </div>
       </nav>
 
-      <div id="stage">
-        <div id="stage-caption">
-          <h1 class="display-3">Karan Bhanot</h1>
-          <p id="main-subheading">Machine Learning Enthusiast - Front-End Developer - Computer Science Engineer</span></p>
-        </div>
-      </div>
-
-      <section id="about">
-        <div class="container">
+      <div class="container">
+        <div id="about">
           <div class="feature-content">
             <div class="row">
-              <div class="col-lg-4" id="profile-image">
+              <div class="col-md-4">
+                <img src="https://avatars3.githubusercontent.com/u/14316277?v=5" />
               </div>
               <div class="col-lg-8">
                 <h6>About Me</h6>
                 <h2>Karan Bhanot</h2>
-                <p class="lead">I am a Machine Learning student and a Software Developer</p>
-                <p>I have worked on many Machine Learning and Data Analysis projects including Color Identification in Images, Activity Recognition, and Cervical Prediction. I have extensive knowledge of Machine Learning algorithms and have worked with <code>Python</code> and <code>Jupyter Notebooks</code>.
+                <p class="lead">I am a Machine Learning student and a Computer Science Engineer</p>
+                <p>I have worked on many <b>Machine Learning and Data Analysis projects</b> including Color Identification in Images, Activity Recognition, Cervical Prediction, Heart Disease Prediction, Flask applications and more. I have extensive knowledge of Machine Learning algorithms and have worked with many <code>Python</code> and <code>Jupyter Notebooks</code>.
+                I have developed a template for a <b>Machine Learning application</b> using <code>Flask</code> and <code>React</code>.
                 <p>Over the course of my undergraduate studies, I have worked on several projects involving Human Resource Departmant Management System, Blood Bank Management System, and Dispatch Scheduler using <code>HTML, CSS, JavaScript</code> and <code>Bootstrap</code>.</p>
-                <p>Furthermore, I have developed Android application for Health Department on awareness regarding Dengue Virus using <code>Java</code>.</p>
+                <p>Furthermore, I have developed an Android application for Health Department on awareness regarding Dengue Virus using <code>Java</code>.</p>
+                <a href="https://github.com/kb22" role="button" target="_blank" class="btn btn-outline-dark theme-btn">GitHub <i class="fa fa-github social"></i></a><a href="https://www.linkedin.com/in/bhanotkaran22/" role="button" target="_blank" class="btn btn-outline-dark theme-btn">LinkedIn <i class="fa fa-linkedin social"></i></a><a href="https://medium.com/@bhanotkaran22" role="button" target="_blank" class="btn btn-outline-dark theme-btn">Medium <i class="fa fa-medium social"></i></a>
               </div>
             </div>
           </div>
         </div>
       </section>
-
-      <section id="projects">
-        <div class="container">
-          <div class="feature-content">
-            <div class="row">
-              <div class="col-md-6 feature-caption">
-                <h6>Projects</h6>
-                <h2>Take a look at my projects on GitHub</h2>
-                <p class="lead" id="projects-count"></p>
-                <a href="https://github.com/kb22" role="button" target="_blank" class="btn btn-outline-light">Go to GitHub</a>
-              </div>
-              <div class="col-md-6 second-col">
-                <h6>Recent GitHub Repos</h6>
-                <div class="list-group" id="projects-list">
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="articles">
-        <div class="container">
-          <div class="feature-content">
-            <div class="row">
-              <div class="col-md-6 feature-caption">
-                <h6>Articles</h6>
-                <h2>Take a look at my articles on Medium</h2>
-                <p class="lead" id="articles-clap-count"></p>
-                <a href="https://medium.com/@bhanotkaran22" role="button" target="_blank" class="btn btn-outline-dark theme-btn-2">Go to Medium</a>
-              </div>
-              <div class="col-md-6 second-col">
-                <h6>Recent Articles</h6>
-                <ul id="articles-list">
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <footer id="main-footer">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-6">
-              Developed and coded by <br>
-              <strong>Karan Bhanot</strong>
-            </div>
-            <div class="col-md-4 offset-lg-2 second-col">
-              Social</br>
-              <a href="https://github.com/kb22" target="_blank"><i class="fa fa-github social"></i></a>&nbsp;&nbsp;<a href="https://www.linkedin.com/in/bhanotkaran22/" target="_blank"><i class="fa fa-linkedin social"></i></a>&nbsp;&nbsp;<a href="https://medium.com/@bhanotkaran22" target="_blank"><i class="fa fa-medium social"></i></a>
-            </div>
-          </div>
-        </div>
-      </footer>
     </div>
   </body>
+  <script src="scripts/main.js"></script>
 </html>
