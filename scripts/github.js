@@ -24,8 +24,7 @@ function singleColRepo(text) {
 			col1.setAttribute('class', 'col-md-2');
 
 			let image = document.createElement('img');
-			image.setAttribute('src', 
-				'https://images.unsplash.com/photo-1562369865-0a516793ce29?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=240&ixlib=rb-1.2.1&q=80&w=240');
+			image.setAttribute('src', 'images/project-image-' + i%5 + '.jpg');
 
 			let col2 = document.createElement('div');
 			col2.setAttribute('class', 'col-md-4');
@@ -54,7 +53,7 @@ function singleColRepo(text) {
 			let codeLink = document.createElement('a');
 			codeLink.setAttribute('href', text[i].html_url);
 			codeLink.setAttribute('target', '_blank');
-			codeLink.textContent = "View Source Code";
+			codeLink.textContent = "Source Code";
 			links.append(codeLink);
 			let dot = document.createElement('i');
 			dot.setAttribute('class', 'fa fa-circle-thin separator');
@@ -64,6 +63,17 @@ function singleColRepo(text) {
 			readme.setAttribute('target', '_blank');
 			readme.textContent = "Readme";
 			links.append(readme);
+
+			if (text[i].homepage != null) {
+				dot = document.createElement('i');
+				dot.setAttribute('class', 'fa fa-circle-thin separator');
+				links.appendChild(dot);
+				let article = document.createElement('a');
+				article.setAttribute('href', text[i].homepage);
+				article.setAttribute('target', '_blank');
+				article.textContent = "Article";
+				links.append(article);
+			}
 
 			col1.appendChild(image);
 			col2.appendChild(heading);
