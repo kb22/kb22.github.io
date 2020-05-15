@@ -7,6 +7,15 @@
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <script
+  src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"
+></script>
+
+<!-- Optionally, include the theme (if you don't want to struggle to write the CSS) -->
+<link
+   rel="stylesheet"
+   href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css"
+/>
     <link rel="stylesheet" type="text/css" href="styles/loader.css">
     <link rel="stylesheet" type="text/css" href="styles/main.css">
     <link rel="stylesheet" type="text/css" href="styles/index.css">
@@ -30,29 +39,34 @@
         </div>
       </nav>
 
-      <div class="container">
-        <div id="about">
-          <div class="feature-content">
-            <div class="row">
-              <div class="col-md-4">
-                <img src="https://avatars3.githubusercontent.com/u/14316277?v=5" />
-              </div>
-              <div class="col-lg-8">
-                <h2>Karan Bhanot</h2>
-                <p class="lead">Pursuing PhD in Computer Science<br>
-                Research in Data Science and Deep Learning</p>
-                <p>I am pursuing <strong>Doctor of Philosophy in Computer Science</strong> at Rensselaer Polytechnic Institute, Troy, New York.<br><br>
-                I have worked on many <strong>Machine Learning, Deep Learning, Data Science and Data Analytics</strong> projects including Mortality Minder, COVID Minder, Color identification, Malaria Cell Identifier, Activity Recognition, Heart Disease Prediction, Web Scraping and many more.<br><br>
-                I have extensive knowledge of Machine Learning algorithms and have worked with <code>Python</code> and <code>R</code> including their numerous libraries such as <code>Tensorflow</code>, <code>Pytorch</code>, <code>Sklearn</code>, <code>Dplyr</code> and <code>Leaflet</code>.
-                I have developed a template for a <b>Machine Learning application</b> using <code>Flask</code> and <code>React</code>.<br><br>
-                I'm also great with frontend web application development using <code>HTML</code>, <code>CSS</code> and <code>JavaScript</code>.</p>
-                <a href="https://github.com/kb22" role="button" target="_blank" class="btn btn-outline-dark theme-btn">GitHub <i class="fa fa-github social"></i></a><a href="https://www.linkedin.com/in/bhanotkaran22/" role="button" target="_blank" class="btn btn-outline-dark theme-btn">LinkedIn <i class="fa fa-linkedin social"></i></a><a href="https://medium.com/@bhanotkaran22" role="button" target="_blank" class="btn btn-outline-dark theme-btn">Medium <i class="fa fa-medium social"></i></a>
-              </div>
-            </div>
+      <div class="container about">
+        <div class="row">
+          <div class="col-md-4">
+            <img src="https://avatars3.githubusercontent.com/u/14316277?v=5" />
+          </div>
+          <div class="col-md-8">
+            <h2>Karan Bhanot</h2>
+            <p class="lead">Pursuing PhD in Computer Science<br>
+            Research in Data Science and Deep Learning</p>
+            <p>I am pursuing <strong>Doctor of Philosophy in Computer Science</strong> at Rensselaer Polytechnic Institute, Troy, New York.<br><br>
+            I have worked on many <strong>Machine Learning, Deep Learning, Data Science and Data Analytics</strong> projects including Mortality Minder, COVID Minder, Color identification, Malaria Cell Identifier, Activity Recognition, Heart Disease Prediction, Web Scraping and many more.<br><br>
+            I have extensive knowledge of Machine Learning algorithms and have worked with <code>Python</code> and <code>R</code> including their numerous libraries such as <code>Tensorflow</code>, <code>Pytorch</code>, <code>Sklearn</code>, <code>Dplyr</code> and <code>Leaflet</code>.
+            I have developed a template for a <b>Machine Learning application</b> using <code>Flask</code> and <code>React</code>.<br><br>
+            I'm also great with frontend web application development using <code>HTML</code>, <code>CSS</code> and <code>JavaScript</code>.</p>
+            <a href="https://github.com/kb22" role="button" target="_blank" class="btn btn-outline-dark theme-btn">GitHub <i class="fa fa-github social"></i></a><a href="https://www.linkedin.com/in/bhanotkaran22/" role="button" target="_blank" class="btn btn-outline-dark theme-btn">LinkedIn <i class="fa fa-linkedin social"></i></a><a href="https://medium.com/@bhanotkaran22" role="button" target="_blank" class="btn btn-outline-dark theme-btn">Medium <i class="fa fa-medium social"></i></a>
           </div>
         </div>
-      </section>
+      </div>
+      <div class="container">
+        <div class="row github-row">
+          <div class="col-lg-12 calendar">
+          </div>
+        </div>
+      </div>
     </div>
   </body>
   <script src="scripts/main.js"></script>
+  <script>
+    GitHubCalendar(".calendar", "kb22", { responsive: true });
+</script>
 </html>

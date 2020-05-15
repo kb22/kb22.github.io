@@ -1,4 +1,4 @@
-#about {
+.about {
   height: 100%;
   display: flex;
   align-items: center;
@@ -21,9 +21,16 @@ img {
   margin-bottom: 10px;
 }
 
+.github-row {
+  align-content: center;
+  width: 80%;
+  height: auto;
+  margin: 20px auto;
+}
+
 @media screen and ( max-width: 768px ){
-  #about {
-    display: block;
+  .about {
+    height: auto;
   }
   img {
     padding-bottom: 20px;
