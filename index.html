@@ -20,25 +20,28 @@
     <link rel="stylesheet" type="text/css" href="styles/main.css">
     <link rel="stylesheet" type="text/css" href="styles/index.css">
   </head>
-  <body>
+  <body id="about">
     <div id="loader">
       <div class="loader"></div>
     </div>
     <div id="content">
       <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
         <div class="container-fluid">
-          <span class="navbar-brand mx-auto">Karan Bhanot</span>
+          <span class="navbar-brand">Karan Bhanot</span>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbar">
+            <div class="navbar-nav mr-auto">
+              <a class="nav-item nav-link" href="#about">About</a>
+              <a class="nav-item nav-link" href="#insights">Insights</a>
+            </div>
             <div class="navbar-nav ml-auto">
               <a class="nav-item nav-link active" href="index.html">Home</a>
             </div>
           </div>
         </div>
       </nav>
-
       <div class="container about">
         <div class="row">
           <div class="col-md-4">
@@ -57,7 +60,7 @@
           </div>
         </div>
       </div>
-      <div class="container">
+      <div class="container" id="insights">
         <div class="row github-row">
           <div class="col-lg-12 calendar">
           </div>
