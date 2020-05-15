@@ -1,4 +1,6 @@
-.about {
+/*About section*/
+
+.full-page {
   height: 100%;
   display: flex;
   align-items: center;
@@ -6,8 +8,12 @@
 
 img {
   max-width: 100%;
+}
+
+img.profile-img {
   border-radius: 50%;
 }
+
 
 .social {
   font-size: 1.2em;
@@ -21,6 +27,26 @@ img {
   margin-bottom: 10px;
 }
 
+.carousel-caption {
+    position: relative;
+    left: 0;
+    top: 0;
+}
+
+.featured-link {
+    color: white;
+    text-decoration: underline;
+}
+
+.featured-link:hover {
+    color: white;
+}
+
+.featured-link:active {
+    color: white;
+}
+
+/*GitHub insights section*/
 .github-row {
   align-content: center;
   width: 80%;
@@ -28,11 +54,17 @@ img {
   margin: 20px auto;
 }
 
+/*Support for multiple screen sizes*/
 @media screen and ( max-width: 768px ){
-  .about {
+  .full-page {
     height: auto;
   }
   img {
     padding-bottom: 20px;
   }
+  .carousel-caption {
+        h5 {
+            font-size: 1rem;
+        }
+    }
 }
