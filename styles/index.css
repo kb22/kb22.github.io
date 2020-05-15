@@ -1,0 +1,31 @@
+#about {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+img {
+  max-width: 100%;
+  border-radius: 50%;
+}
+
+.social {
+  font-size: 1.2em;
+  padding-left: 5px;
+}
+
+.theme-btn {
+  border-color: #262f36;
+  color: #000;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+@media screen and ( max-width: 768px ){
+  #about {
+    display: block;
+  }
+  img {
+    padding-bottom: 20px;
+  }
+}
