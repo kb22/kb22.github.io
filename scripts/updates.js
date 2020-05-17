@@ -1,7 +1,14 @@
 let content = document.getElementById("latest-updates");
 let list = document.createElement('ul');
 
-for (let index = 0; index < latest_updates.length; index++) {
+var length = 0;
+if (latest_updates.length > 6) {
+	length = 6;
+} else {
+	length = latest_updates.length;
+}
+
+for (let index = 0; index < length; index++) {
 	var update = latest_updates[index];
 
 	let listObject = document.createElement('li');
@@ -14,4 +21,5 @@ for (let index = 0; index < latest_updates.length; index++) {
 	listObject.appendChild(text);
 	list.appendChild(listObject);
 }
+
 content.appendChild(list);
