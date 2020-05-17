@@ -12,7 +12,8 @@ fetch('https://api.github.com/users/kb22/repos?sort=pushed&per_page=30')
 
 function showProjects(text) {
 	let content = document.getElementById("recent-repos");
-	for (let i = 0; i < 3; i++) {
+	let count  = 0;
+	for (let i = 0; i < 4; i++) {
 		let row = document.createElement('div');
 		row.setAttribute('class', 'row');
 
@@ -27,6 +28,12 @@ function showProjects(text) {
 
 		let heading = document.createElement('h6');
 		heading.textContent = (text[i].name.split('-')).join(' ');
+
+		if (heading.textContent == "kb22.github.io" || count == 3) {
+			continue;
+		} else {
+			count++;
+		}
 
 		let description = document.createElement('p');
 		row.style.fontSize = '12px';
