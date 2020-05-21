@@ -11,6 +11,10 @@
   border-bottom: 0;
 }
 
+.row {
+  margin: 0;
+}
+
 img {
   max-width: 100%;
 }
@@ -94,6 +98,9 @@ img.profile-img {
   .full-page {
     height: auto;
     border: 0;
+  }
+  .centered {
+    text-align: center
   }
   img {
     padding-bottom: 20px;
