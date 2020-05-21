@@ -4,6 +4,11 @@
   height: 100%;
   display: flex;
   align-items: center;
+  border-bottom: 2px solid black;
+}
+
+#highlights{
+  border-bottom: 0;
 }
 
 img {
@@ -79,10 +84,16 @@ img.profile-img {
   letter-spacing: 4;
 }
 
+.dark-background {
+  background-color: #262f36;
+  color: white;
+}
+
 /*Support for multiple screen sizes*/
 @media screen and ( max-width: 768px ){
   .full-page {
     height: auto;
+    border: 0;
   }
   img {
     padding-bottom: 20px;
