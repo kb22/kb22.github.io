@@ -74,6 +74,11 @@ img.profile-img {
   color: grey;
 }
 
+.col-heading {
+  text-transform: uppercase;
+  letter-spacing: 4;
+}
+
 /*Support for multiple screen sizes*/
 @media screen and ( max-width: 768px ){
   .full-page {

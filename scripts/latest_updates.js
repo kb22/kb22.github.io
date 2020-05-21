@@ -15,3 +15,13 @@ latest_updates = [
 		"date": "December 12, 2019"
 	}
 ]
+
+publications = [
+	{
+		"content": "Identifying the Relationship between Precipitation and Zika Outbreaks in Argentina",
+		"cite": "L. Ngweta, K. Bhanot, A. Maharaj, I. Bogle and T. Munasinghe, \"Identifying the Relationship between Precipitation and Zika Outbreaks in Argentina,\" 2019 IEEE International Conference on Big Data (Big Data), Los Angeles, CA, USA, 2019, pp. 6163-6165, doi: 10.1109/BigData47090.2019.9006386.",
+		"url": "https://ieeexplore.ieee.org/document/9006386",
+		"code": "https://github.com/ITWSDataScience/ArgentinaZikaForecating2019",
+		"date": "February 24, 2020"
+	}
+]
