@@ -57,6 +57,7 @@ for (let index = 0; index < length; index++) {
 
 	let cite = document.createElement('p');
 	cite.style.fontSize = '10px';
+	cite.style.textAlign = 'justify';
 	cite.textContent = update.cite;
 
 	let further = document.createElement('p');
