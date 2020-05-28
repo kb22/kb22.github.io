@@ -50,3 +50,47 @@ body {
 .bgcolor-black {
   background-color: var(--color-black);
 }
+
+/* Navigation bar styles */
+#header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 99999;
+  transition: left .5s ease;
+}
+
+#header nav {
+  height: 100vh;
+}
+
+#header .site-title .navbar-brand {
+  letter-spacing: 2px;
+  color: var(--color-white);
+}
+
+#header .nav-link {
+  margin: .7rem 1rem;
+  border-bottom: 1px solid var(--color-border);
+  text-transform: uppercase;
+}
+
+#header .nav-link:hover {
+  color: var(--color-white) !important;
+}
+
+#header .toggle-button {
+  background: none;
+  color: var(--color-black);
+  position: fixed;
+  top: 25px;
+  right: 20px;
+  border: 1px solid var(--color-border);
+}
+
+.toggle-left {
+  left: 0 !important;
+  width: 1000px !important;
+}
+
