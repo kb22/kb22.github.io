@@ -94,3 +94,29 @@ body {
   width: 1000px !important;
 }
 
+/* Main section styles */
+.site-banner .banner-area {
+  background: url(../images/banner.jpg) no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+.site-banner .banner-area .author {
+  margin: 0;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%)
+}
+
+.site-banner .banner-area .author .author-img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin: auto;
+  background: url(https://avatars3.githubusercontent.com/u/14316277?v=5) no-repeat;
+  background-size: 100%;
+  background-position: 40% 0;
+}

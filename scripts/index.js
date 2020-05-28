@@ -24,3 +24,14 @@ function toggleOnClick($win, $navbar, width) {
 		$navbar.css({left: '0px'});
 	}
 }
+
+var typed = new Typed('#typed', {
+	strings: [
+		"Data Science",
+		"Machine Learning",
+		"Computer Science"
+	],
+	typeSpeed: 50,
+	backSpeed: 50,
+	loop: true
+});
