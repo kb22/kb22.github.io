@@ -27,6 +27,11 @@ body {
   font: normal bold 18px var(--font-ram);
 }
 
+.font-ram-basic {
+  font-size: 18px;
+  font-family: var(--font-ram);
+}
+
 .font-size-40 {
   font-size: 40px;
 }
