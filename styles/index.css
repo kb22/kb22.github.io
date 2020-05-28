@@ -1,116 +1,52 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald&family=Rambla&family=Staatliches&display=swap');
 
-
-
-
-/*About section*/
-
-.full-page {
-  height: 100%;
-  display: flex;
-  align-items: center;
-  border-bottom: 2px solid black;
-}
-
-#highlights{
-  border-bottom: 0;
-}
-
-.row {
+/* Universal styles */
+body {
   margin: 0;
+  padding: 0;
 }
 
-img {
-  max-width: 100%;
+:root {
+  --color-black: #000;
+  --color-white: #fff;
+  --color-border: #ffffff34;
+  --font-staat: 'Staatliches', cursive;
+  --font-os: 'Oswald', sans-serif;
+  --font-ram: 'Rambla', sans-serif;
 }
 
-img.profile-img {
-  border-radius: 50%;
+.font-staat {
+  font: normal 400 18px var(--font-staat);
 }
 
-
-.social {
-  font-size: 1.2em;
-  padding-left: 5px;
+.font-os {
+  font: normal 300 18px var(--font-os);
 }
 
-.theme-btn {
-  border-color: #262f36;
-  color: #000;
-  margin-right: 10px;
-  margin-bottom: 10px;
+.font-ram {
+  font: normal bold 18px var(--font-ram);
 }
 
-.carousel-caption {
-    position: relative;
-    left: 0;
-    top: 0;
+.font-size-40 {
+  font-size: 40px;
 }
 
-.featured-link {
-    color: white;
-    text-decoration: underline;
+.font-size-34 {
+  font-size: 34px;
 }
 
-.featured-link:hover {
-    color: white;
+.font-size-27 {
+  font-size: 27px;
 }
 
-.featured-link:active {
-    color: white;
+.font-size-20 {
+  font-size: 20px;
 }
 
-/*GitHub insights section*/
-.github-row {
-  align-content: center;
-  width: 80%;
-  height: auto;
-  margin: 20px auto;
+.font-size-16 {
+  font-size: 16px;
 }
 
-.blank {
-  background-color: #D3D3D3;
-  height: 8rem;
-  margin: 1rem;
-}
-
-.info-icon {
-  padding-right: 4px;
-  padding-left: 20px;
-}
-
-.info-icon:first-child {
-  padding-left: 0;
-}
-
-.separator {
-  padding: 0 10px;
-  color: grey;
-}
-
-.col-heading {
-  text-transform: uppercase;
-  letter-spacing: 4;
-}
-
-.dark-background {
-  background-color: #262f36;
-  color: white;
-}
-
-/*Support for multiple screen sizes*/
-@media screen and ( max-width: 768px ){
-  .full-page {
-    height: auto;
-    border: 0;
-  }
-  .centered {
-    text-align: center
-  }
-  img {
-    padding-bottom: 20px;
-  }
-  .carousel-caption h5 {
-    font-size: 1rem;
-  }
+.bgcolor-black {
+  background-color: var(--color-black);
 }
