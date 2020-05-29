@@ -125,3 +125,15 @@ body {
   background-size: 100%;
   background-position: 40% 0;
 }
+
+.info-icon {
+  padding-left: 4px;
+}
+
+.info-number {
+  padding-left: 2px;
+}
+
+.separater {
+  margin: 0 5px;
+}
