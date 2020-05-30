@@ -23,6 +23,7 @@ function showProjects(text) {
 		let image = document.createElement('img');
 		image.setAttribute('src', 'images/project-image-' + i%5 + '.jpg');
 		image.style.width = "100%";
+		image.style.borderRadius = "4px";
 
 		let col2 = document.createElement('div');
 		col2.setAttribute('class', 'col-md-8');
