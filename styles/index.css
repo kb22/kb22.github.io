@@ -195,6 +195,11 @@ body {
   padding-bottom: 1em;
 }
 
+.table td, .table th {
+  padding: 1px;
+  font-size: 16px;
+}
+
 @media only screen and (min-width: 768px) {
   #header .toggle-button {
     display: none;
