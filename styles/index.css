@@ -100,6 +100,10 @@ body {
 }
 
 /* Main section styles */
+.site-main {
+  z-index: 16;
+}
+
 .site-banner .banner-area {
   background: url(../images/banner.jpg) no-repeat;
   background-size: cover;
@@ -149,4 +153,19 @@ body {
 
 .featured-link:active {
     color: white;
+}
+
+.carousel .carousel-indicators li {
+  background-color: #fff;
+  background-color: rgba(70, 70, 70, 0.25);
+}
+
+.carousel .carousel-indicators .active {
+  background-color: #444;
+}
+
+@media only screen and (min-width: 768px) {
+  #header .toggle-button {
+    display: none;
+  }
 }
