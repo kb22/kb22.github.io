@@ -195,9 +195,12 @@ body {
   padding-bottom: 1em;
 }
 
-.table td, .table th {
-  padding: 1px;
-  font-size: 16px;
+.stat-name {
+  padding: 0;
+}
+
+.table {
+  font-size: 12px;
 }
 
 @media only screen and (min-width: 768px) {
