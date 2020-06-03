@@ -56,14 +56,14 @@ for (let index = 0; index < length; index++) {
 	date.textContent = update.date;
 
 	let cite = document.createElement('p');
-	cite.style.fontSize = '10px';
+	cite.style.fontSize = '12px';
 	cite.style.textAlign = 'justify';
 	cite.textContent = update.cite;
 
 	let further = document.createElement('p');
 	further.style.fontSize = '12px';
 	let linkIcon = document.createElement('i');
-	linkIcon.setAttribute('class', 'fa fa-link info-icon');
+	linkIcon.setAttribute('class', 'fas fa-link separater');
 	further.appendChild(linkIcon);
 
 	let link = document.createElement('a');
@@ -73,7 +73,7 @@ for (let index = 0; index < length; index++) {
 	further.appendChild(link);
 
 	let codeIcon = document.createElement('i');
-	codeIcon.setAttribute('class', 'fa fa-code info-icon');
+	codeIcon.setAttribute('class', 'fas fa-code separater');
 	further.appendChild(codeIcon);
 
 	let code = document.createElement('a');
