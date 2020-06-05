@@ -6,6 +6,11 @@ body {
   padding: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+/* Define variables */
 :root {
   --color-black: #000;
   --color-white: #fff;
@@ -56,7 +61,7 @@ body {
   background-color: var(--color-black);
 }
 
-/* Navigation bar styles */
+/* Side navigation bar styles */
 #header {
   position: fixed;
   top: 0;
@@ -99,11 +104,7 @@ body {
   width: 1000px !important;
 }
 
-/* Main section styles */
-.site-main {
-  z-index: 16;
-}
-
+/* Banner section styles */
 .site-banner .banner-area {
   background: url(../images/banner.jpg) no-repeat;
   background-size: cover;
@@ -124,37 +125,14 @@ body {
   width: 200px;
   height: 200px;
   border-radius: 50%;
+  border: 1px solid var(--color-white);
   margin: auto;
   background: url(https://avatars3.githubusercontent.com/u/14316277?v=5) no-repeat;
   background-size: 100%;
   background-position: 40% 0;
 }
 
-.info-icon {
-  padding-left: 4px;
-}
-
-.info-number {
-  padding-left: 2px;
-}
-
-.separater {
-  margin: 0 5px;
-}
-
-.featured-link {
-    color: black;
-    text-decoration: underline;
-}
-
-.featured-link:hover {
-    color: white;
-}
-
-.featured-link:active {
-    color: white;
-}
-
+/* Project section styles */
 .carousel .carousel-indicators li {
   background-color: #fff;
   background-color: rgba(70, 70, 70, 0.25);
@@ -185,6 +163,18 @@ body {
   display: block
 }
 
+.info-icon {
+  padding-left: 4px;
+}
+
+.info-number {
+  padding-left: 2px;
+}
+
+.separater {
+  margin: 0 5px;
+}
+
 .card {
   background-color: transparent;
   border-color: transparent;
@@ -203,9 +193,18 @@ body {
   font-size: 12px;
 }
 
+/* Screen size dependent styles */
 @media only screen and (min-width: 768px) {
   #header .toggle-button {
     display: none;
+  }
+
+  /* Ensures that all links are clickable 
+     by placing all link panels in same z
+     space as the side panel.
+  */
+  #about-text {
+    z-index: 16;
   }
 
   #featuredCarousel {
@@ -213,6 +212,10 @@ body {
   }
 
   #recent-projects {
+    z-index: 16;
+  }
+
+  .updates-column {
     z-index: 16;
   }
 }
