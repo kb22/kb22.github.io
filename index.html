@@ -1,123 +1,204 @@
-<html>
-  <head>
-    <title>Karan Bhanot</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico" />
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
-    <script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script>
-    <link rel="stylesheet" href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css" />
-    <link rel="stylesheet" type="text/css" href="styles/loader.css">
-    <link rel="stylesheet" type="text/css" href="styles/main.css">
-    <link rel="stylesheet" type="text/css" href="styles/index.css">
-  </head>
-  <body id="about">
-    <div id="loader">
-      <div class="loader"></div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Karan Bhanot</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico"/>
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="styles/index.css"/>
+</head>
+<body>
+  <header id="header">
+    <div class="row m-0">
+      <div class="col-3 bgcolor-black">
+        <nav class="primary-nav navbar-expand-md">
+          <div class="site-title text-center text-light py-5">
+            <a href="#" class="navbar-brand font-staat font-size-40">KB</a>
+            <p class="description text-uppercase font-os">Karan Bhanot</p>
+          </div>
+          <div class="d-flex flex-column">
+            <a href="#home" class="nav-item nav-link text-white-50 font-os font-size-16 active">Home</a>
+            <a href="#about" class="nav-item nav-link text-white-50 font-os font-size-16">About me</a>
+            <a href="#projects" class="nav-item nav-link text-white-50 font-os font-size-16">Projects</a>
+            <a href="#updates" class="nav-item nav-link text-white-50 font-os font-size-16">News & Updates</a>
+            <a href="#extra" class="nav-item nav-link text-white-50 font-os font-size-16">Extras</a>
+          </div>
+        </nav>
+      </div>
     </div>
-    <div id="content">
-      <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
-        <div class="container-fluid">
-          <span class="navbar-brand">Karan Bhanot</span>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbar">
-            <div class="navbar-nav ml-auto">
-              <a class="nav-item nav-link active" href="index.html">Home</a>
+    <button class="toggle-button"><span class="fas fa-bars fa-2x"></span></button>
+  </header>
+  <main id="site-main">
+    <div class="row m-0">
+      <div class="col-md-9 offset-md-3 px-0">
+        <section class="site-banner" id="home">
+          <div class="banner-area">
+            <div class="author text-center">
+              <div class="author-img"></div>
+              <h1 class="text-white font-staat font-size-40 text-uppercase py-3">Karan Bhanot</h1>
+              <h5 class="text-white font-ram font-size-27"><span id="typed"></span></h5>
             </div>
           </div>
-        </div>
-      </nav>
-      <div class="container full-page">
-        <div class="row">
-          <div class="col-md-4">
-            <img src="https://avatars3.githubusercontent.com/u/14316277?v=5" class="profile-img" />
+        </section>
+        <section id="about" class="about px-4 my-2">
+          <div class="me py-4">
+            <h5 class="text-uppercase font-os font-size-16 text-muted">Information</h5>
+            <h1 class="text-uppercase font-staat font-size-34">About Me</h1>
           </div>
-          <div class="col-md-8">
-            <h2>Karan Bhanot</h2>
-            <p class="lead">Pursuing PhD in Computer Science<br>
+          <div class="row m-0">
+            <div class="col-sm-5 pl-0">
+              <img src="images/about.jpg" alt="about-image" class="img-fluid">
+            </div>
+            <div class="col-sm-7" id="about-text">
+              <h6 class="text-uppercase font-os font-size-34">Karan Bhanot</h6>
+            <p class="font-ram font-size-20 py-2">Pursuing PhD in Computer Science<br>
             Research in Data Science and Deep Learning</p>
-            <p style="text-align: justify;">I am pursuing <strong>Doctor of Philosophy in Computer Science</strong> at Rensselaer Polytechnic Institute, Troy, New York.<br><br>
-            I have worked on many <strong>Machine Learning, Deep Learning, Data Science and Data Analytics</strong> projects including Mortality Minder, COVID Minder, Color identification, Malaria Cell Identifier, Activity Recognition, Heart Disease Prediction, Web Scraping and many more.<br><br>
-            I have extensive knowledge of Machine Learning algorithms and have worked with <code>Python</code> and <code>R</code> including their numerous libraries such as <code>Tensorflow</code>, <code>Pytorch</code>, <code>Sklearn</code>, <code>Dplyr</code> and <code>Leaflet</code>.
-            I have developed a template for a <b>Machine Learning application</b> using <code>Flask</code> and <code>React</code>.<br><br>
+            <p class="text-justify">I am pursuing <strong>Doctor of Philosophy in Computer Science</strong> at Rensselaer Polytechnic Institute, Troy, New York.<br><br>
+            I have worked on many <strong>Machine Learning, Deep Learning, Data Science and Data Analytics</strong> projects including Mortality Minder, COVID Minder, Color identification, Malaria Cell Identifier, Activity Recognition, Heart Disease Prediction, Web Scraping and many more using <code>Python</code> and <code>R</code> including their numerous libraries such as <code>Tensorflow</code>, <code>Pytorch</code>, <code>Sklearn</code>, <code>Dplyr</code> and <code>Leaflet</code>.<br><br>
+            I have developed a template for a <b>Machine Learning application</b> using <code>Flask</code> and <code>React</code>.
             I'm also great with frontend web application development using <code>HTML</code>, <code>CSS</code> and <code>JavaScript</code>.</p>
-            <a href="https://github.com/kb22" role="button" target="_blank" class="btn btn-outline-dark theme-btn">GitHub <i class="fa fa-github social"></i></a><a href="https://www.linkedin.com/in/bhanotkaran22/" role="button" target="_blank" class="btn btn-outline-dark theme-btn">LinkedIn <i class="fa fa-linkedin social"></i></a><a href="https://medium.com/@bhanotkaran22" role="button" target="_blank" class="btn btn-outline-dark theme-btn">Medium <i class="fa fa-medium social"></i></a>
+            <a href="https://github.com/kb22" role="button" target="_blank" class="btn btn-outline-dark mr-2 mb-2">GitHub <i class="fab fa-github"></i></a><a href="https://www.linkedin.com/in/bhanotkaran22/" role="button" target="_blank" class="btn btn-outline-dark mr-2 mb-2">LinkedIn <i class="fab fa-linkedin"></i></a><a href="https://medium.com/@bhanotkaran22" role="button" target="_blank" class="btn btn-outline-dark mr-2 mb-2">Medium <i class="fab fa-medium"></i></a>
+            </div>
           </div>
-        </div>
-        <hr>
-      </div>
-      <div class="container full-page" id="featured">
-        <div class="row" style="width: 100%;">
-          <div class="col-md-6 centered">
-            <p class="lead col-heading">Live projects</p>
-            <div id="featuredCarousel" class="carousel slide" data-ride="carousel">
-              <ol class="carousel-indicators my-4">
-                <li data-target="#featuredCarousel" data-slide-to="0" class="active"></li>
-                <li data-target="#featuredCarousel" data-slide-to="1"></li>
-              </ol>
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <img class="d-block w-100" src="images/covidminder.png" alt="First slide">
-                  <div class="carousel-caption d-md-block bg-dark mb-4">
-                    <h5><a href="https://covidminder.idea.rpi.edu/" class="featured-link" target="_blank">COVID MINDER</a></h5>
-                    <p>Regional disparities in COVID-19 pandemic<br>across United States</p>
+        </section>
+        <section id="projects" class="projects px-4 my-2 bg-light">
+          <div class="py-4">
+            <h5 class="text-uppercase font-os font-size-16 text-muted">Recent work</h5>
+            <h1 class="text-uppercase font-staat font-size-34">Projects</h1>
+          </div>
+          <div class="row">
+            <div class="col-lg-6">
+              <div id="featuredCarousel" class="carousel slide featuredCarousel" data-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <h4 class="font-staat font-size-34"><a href="https://covidminder.idea.rpi.edu/" target="_blank">COVID MINDER</a></h4>
+                    <p class="font-os font-size-16">Regional disparities in COVID-19 pandemic<br>across United States</p>
+                    <img class="d-block w-100" src="images/covidminder.png" alt="First slide">
+                  </div>
+                  <div class="carousel-item">
+                    <h4 class="font-staat font-size-34"><a href="https://mortalityminder.idea.rpi.edu/" target="_blank">MORTALITY MINDER</a></h4>
+                    <p class="font-os font-size-16">Premature death trends in United States<br>by causes of death</p>
+                    <img class="d-block w-100" src="images/mortalityminder.png" alt="Second slide">
                   </div>
                 </div>
-                <div class="carousel-item">
-                  <img class="d-block w-100" src="images/mortalityminder.png" alt="Second slide">
-                  <div class="carousel-caption d-md-block bg-dark mb-4">
-                    <h5><a href="https://mortalityminder.idea.rpi.edu/" class="featured-link" target="_blank">MORTALITY MINDER</a></h5>
-                    <p>Premature death trends in United States<br>by causes of death</p>
-                  </div>
-                </div>
+                <a class="carousel-control-next" href=".featuredCarousel" role="button" data-slide="next">
+                  <span class="next-indicator">Next <i class="fas fa-chevron-circle-right"></i></span>
+                </a>
               </div>
-              <a class="carousel-control-prev" href="#featuredCarousel" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-              </a>
-              <a class="carousel-control-next" href="#featuredCarousel" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-              </a>
+            </div>
+            <div class="col-lg-6" id="recent-projects">
             </div>
           </div>
-          <div class="col-md-6 centered">
-            <p class="lead col-heading">Recent work</p>
-            <div id="recent-repos">
+        </section>
+        <section id="updates" class="updates px-4 my-2">
+          <div class="py-4">
+            <h5 class="text-uppercase font-os font-size-16 text-muted">Recent</h5>
+            <h1 class="text-uppercase font-staat font-size-34">News & Updates</h1>
+          </div>
+          <div class="row">
+            <div class="col-md-6 updates-column">
+              <h5 class="font-staat font-size-20">Latest</h5>
+              <div id="latest-updates">
+              </div>
+            </div>
+            <div class="col-md-6 updates-column">
+               <h5 class="font-staat font-size-20">Publications</h5>
+              <div id="publications">
+              </div>
             </div>
           </div>
-        </div>
-      </div>
-      <div class="container full-page" id="highlights">
-        <div class="row" style="width: 100%;">
-          <div class="col-md-6">
-            <p class="lead col-heading"><strong>Latest updates</strong></p>
-            <div id="latest-updates">
+        </section>
+        <section id="extra" class="px-4 my-2 bg-light">
+          <div class="py-4">
+            <h5 class="text-uppercase font-os font-size-16 text-muted">Extra-curricular</h5>
+            <h1 class="text-uppercase font-staat font-size-34">Extras</h1>
+          </div>
+          <div class="row">
+            <div class="col-lg-6">
+              <p class="text-justify">
+                I believe <strong>we grow when we step out of out comfort zones.</strong> Thus, in <strong>October 2019</strong>, I decided that I will try something new each month and see if I can grow a little more each month.
+              </p>
+              <p>This month I'm doing - 
+              </p>
+              <p class="font-staat font-size-40">
+               &nbsp;&nbsp;&nbsp;&nbsp;15 Min Meditation
+              </p>
+              <p class="text-justify">Out of all the tasks I tried, I have decided to forever inclucate <strong>daily reading, workout, cold shower and less social media usage</strong> in my life till now. Let's see what's more!
+              </p>
+            </div>
+            <div class="col-lg-6">
+              <table class="table">
+                <thead class="thead-dark">
+                  <tr>
+                    <th scope="col">Month</th>
+                    <th scope="col">Task</th>
+                    <th scope="col">Completion rate</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th>June, 2020</th>
+                    <td>Meditate for 15 minutes</td>
+                    <td>In progress</td>
+                  </tr>
+                  <tr>
+                    <th>May, 2020</th>
+                    <td>Read for 30 minutes</td>
+                    <td>100%</td>
+                  </tr>
+                  <tr>
+                    <th>April, 2020</th>
+                    <td>Drink 4 bottles of water</td>
+                    <td>100%</td>
+                  </tr>
+                  <tr>
+                    <th>March, 2020</th>
+                    <td>Take a cold shower</td>
+                    <td>71.4%</td>
+                  </tr>
+                  <tr>
+                    <th>February, 2020</th>
+                    <td>Journal every night</td>
+                    <td>82.76%</td>
+                  </tr>
+                  <tr>
+                    <th>January, 2020</th>
+                    <td>Don't use Instagram</td>
+                    <td>100%</td>
+                  </tr>
+                  <tr>
+                    <th>December, 2019</th>
+                    <td>No shave</td>
+                    <td>100%</td>
+                  </tr>
+                  <tr>
+                    <th>November, 2019</th>
+                    <td>No junk food</td>
+                    <td>93.33%</td>
+                  </tr>
+                  <tr>
+                    <th>October, 2019</th>
+                    <td>Exercise in gym</td>
+                    <td>90.3%</td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
           </div>
-          <div class="col-md-6">
-            <p class="lead col-heading">Publications</p>
-            <div id="publications">
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="container-fluid dark-background" id="footer" style="text-align: center; padding: 20px 0;">
-        <div class="row" style="width: 100%; margin: 0;">
-          <div class="col-md-12">
-            <span>Created by Karan Bhanot<br>
-            <a href="mailto:bhanotkaran22@gmail.com" style="color: white;">bhanotkaran22@gmail.com</a></span>
-          </div>
-        </div>
+        </section>
       </div>
     </div>
-  </body>
-  <script type="text/javascript" src="scripts/latest_updates.js"></script>
-  <script src="scripts/main.js"></script>
+  </main>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js" integrity="sha256-KzZiKy0DWYsnwMF+X1DvQngQ2/FxF7MF3Ff72XcpuPs=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+  <script src="scripts/index.js"></script>
   <script src="scripts/github.js"></script>
+  <script src="scripts/updates_data_file.js"></script>
   <script src="scripts/updates.js"></script>
+</body>
 </html>
