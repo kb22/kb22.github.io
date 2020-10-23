@@ -35,3 +35,10 @@ var typed = new Typed('#typed', {
 	backSpeed: 50,
 	loop: true
 });
+
+function closeBanner() {
+
+	$navbar = $("#header");
+	$navbar.toggleClass("toggle-left");
+
+}
