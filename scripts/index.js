@@ -2,6 +2,7 @@ $(document).ready(function(e){
 	$win = $(window);
 	$navbar = $("#header");
 	$toggle = $(".toggle-button");
+	$navbarButton = $(".navbar-button");
 	var width = $navbar.width();
 
 	toggleOnClick($win, $navbar, width);
@@ -13,6 +14,13 @@ $(document).ready(function(e){
 
 	$toggle.click(function(){
 		$navbar.toggleClass("toggle-left");
+	});
+
+	$navbarButton.click(function(){
+		toggleOnClick($win, $navbar, width);
+		if ($win.width() <= 768) {
+			$navbar.toggleClass("toggle-left");
+		}
 	});
 
 });
@@ -36,9 +44,9 @@ var typed = new Typed('#typed', {
 	loop: true
 });
 
-function closeBanner() {
+// function closeBanner() {
 
-	$navbar = $("#header");
-	$navbar.toggleClass("toggle-left");
+// 	$navbar = $("#header");
+// 	$navbar.toggleClass("toggle-left");
 
-}
+// }
