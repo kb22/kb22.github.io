@@ -1,6 +1,6 @@
 .author-img {
-  width: 15em;
-  height: 15em;
+  width: 300px;
+  height: 300px;
   border-radius: 50%;
   border: 1px solid var(--color-white);
   margin: auto;
@@ -9,8 +9,10 @@
   background-position: 40% 0;
 }
 
-@media (max-width: 992px) {
+@media (max-width: 767px) {
 	.author-img {
 		margin-top: 10px;
+    width: 150px;
+    height: 150px;
 	}
 }
