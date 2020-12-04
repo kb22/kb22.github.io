@@ -11,8 +11,6 @@
 
 @media (max-width: 767px) {
 	.author-img {
-		margin-top: 10px;
-    width: 150px;
-    height: 150px;
+		margin-top: 40px;
 	}
 }
