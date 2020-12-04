@@ -1,38 +1,3 @@
-$(document).ready(function(e){
-	$win = $(window);
-	$navbar = $("#header");
-	$toggle = $(".toggle-button");
-	$navbarButton = $(".navbar-button");
-	var width = $navbar.width();
-
-	toggleOnClick($win, $navbar, width);
-
-	//resize event
-	$win.resize(function(){
-		toggleOnClick($win, $navbar, width);
-	});
-
-	$toggle.click(function(){
-		$navbar.toggleClass("toggle-left");
-	});
-
-	$navbarButton.click(function(){
-		toggleOnClick($win, $navbar, width);
-		if ($win.width() <= 768) {
-			$navbar.toggleClass("toggle-left");
-		}
-	});
-
-});
-
-function toggleOnClick($win, $navbar, width) {
-	if ($win.width() <= 768) {
-		$navbar.css({left: `-${width}px`});
-	} else {
-		$navbar.css({left: '0px'});
-	}
-}
-
 var typed = new Typed('#typed', {
 	strings: [
 		"Data Science",
@@ -43,10 +8,3 @@ var typed = new Typed('#typed', {
 	backSpeed: 50,
 	loop: true
 });
-
-// function closeBanner() {
-
-// 	$navbar = $("#header");
-// 	$navbar.toggleClass("toggle-left");
-
-// }
