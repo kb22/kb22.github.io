@@ -3,6 +3,10 @@
 <head>
 	<title>Karan Bhanot</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" crossorigin="anonymous">
 	<link rel="stylesheet" href="styles/index.css">
 </head>
@@ -11,9 +15,11 @@
 
 		<!-- Navbar -->
 		<div class="row flex-shrink-0">
-			<nav class="navbar navbar-expand-sm navbar-light">
+			<div class="col-lg-1"></div>
+			<div class="col-lg-10">
+				<nav class="navbar navbar-expand-sm navbar-light px-0">
 
-				<!-- Add name as website name -->
+					<!-- Add name as website name -->
 				<div class="navbar-brand"><h4>KARAN BHANOT</h4></div>
 
 				<!-- Add toggle -->
@@ -25,44 +31,105 @@
 				<div class="collapse navbar-collapse" id="navbarSupportedContent">
 
 					<!-- Social links -->
-					<ul class="navbar-nav mr-auto">
+					<ul class="navbar-nav ml-auto nav-links-right">
 						<li class="nav-item basic-line-height">
-							<a class="nav-link" target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/bhanotkaran22/">LinkedIn</a>
+							<a class="nav-link" target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/bhanotkaran22/"><i class="bi bi-linkedin" aria-hidden="true"></i><span>LinkedIn</span></a>
 						</li>
 						<li class="nav-item basic-line-height">
-							<a class="nav-link" target="_blank" rel="noopener noreferrer" href="https://scholar.google.com/citations?user=p9wGyHAAAAAJ&hl=en">Google Scholar</a>
+							<a class="nav-link" target="_blank" rel="noopener noreferrer" href="https://scholar.google.com/citations?user=p9wGyHAAAAAJ&hl=en"><i class="bi bi-journal-text" aria-hidden="true"></i><span>Scholar</span></a>
 						</li>
 						<li class="nav-item basic-line-height">
-							<a class="nav-link" target="_blank" rel="noopener noreferrer" href="https://github.com/kb22">GitHub</a>
+							<a class="nav-link" target="_blank" rel="noopener noreferrer" href="https://github.com/kb22"><i class="bi bi-github" aria-hidden="true"></i><span>GitHub</span></a>
 						</li>
 						<li class="nav-item basic-line-height">
-							<a class="nav-link" target="_blank" rel="noopener noreferrer" href="mailto:bhanotkaran22@gmail.com">Email</a>
+							<a class="nav-link" target="_blank" rel="noopener noreferrer" href="mailto:bhanotkaran22@gmail.com"><i class="bi bi-envelope" aria-hidden="true"></i><span>Email</span></a>
 						</li>
-					</ul>
-
-					<!-- Download links -->
-					<ul class="navbar-nav ml-auto">
 						<li class="nav-item">
-							<a class="nav-link" target="_blank" rel="noopener noreferrer" href="files/resume.pdf" download>Resume</a>
+							<a class="nav-link" target="_blank" rel="noopener noreferrer" href="files/resume.pdf" download><i class="bi bi-file-earmark-text" aria-hidden="true"></i><span>Resume</span></a>
 						</li>
 					</ul>
 				</div>
-			</nav>
+				</nav>
+			</div>
 		</div>
 		<!-- End Navbar -->
 
 		<!-- Header -->
-		<div class="row flex-grow-1 align-items-center mt-4">
-            <div class="col-lg-4 text-center hero-profile">
-			    <img class="author-img" src="images/KaranBhanotPhoto.png" alt="Portrait of Karan Bhanot">
-			    <h5 class="mt-2">Karan Bhanot, Ph.D.</h5>
+		<div class="row flex-grow-1 mt-4 hero-section">
+			<div class="col-lg-1"></div>
+			<div class="col-lg-10">
+				<div class="row">
+					<div class="col-12">
+						<div class="hero-meta-row">
+					<span>Senior Data Scientist</span>
+					<span class="meta-separator">&bull;</span>
+					<span>Norstella</span>
+					<span class="meta-separator">&bull;</span>
+					<span>Ph.D. Computer Science</span>
+				</div>
 			</div>
-			<div class="col-lg-8">
-				<h2>About me</h2>
-				<p>I am Karan Bhanot, a <strong>Senior Data Scientist at Norstella</strong> with a Ph.D. in Computer Science from Rensselaer Polytechnic Institute. I build <strong>production-grade AI systems</strong> for healthcare using <strong>LLMs, Machine Learning, and agentic workflows</strong> across structured and unstructured data.</p>
-				<p>My work centers on <strong>end-to-end AI pipelines</strong>, from data ingestion and retrieval to <strong>prompt engineering, context engineering, structured extraction, and multi-layer validation</strong>. I focus on building systems that are <strong>reliable, observable, and deployable at scale</strong>.</p>
-				<p>I also bring a strong research foundation, with <strong>10+ publications</strong> in leading AI conferences and journals across <strong>Generative AI, fairness, synthetic data, trustworthy machine learning, and healthcare AI</strong>.</p>
+			<div class="col-lg-8 order-2 order-lg-1 hero-copy d-flex flex-column justify-content-center">
+				<h1 class="hero-name">Karan Bhanot</h1>
+				<p class="hero-intro">I build production-grade AI systems for healthcare, turning complex clinical data into reliable, observable insights using LLMs, agentic workflows, and end-to-end ML pipelines.</p>
+				<div class="hero-expertise">
+					<div class="expertise-inline">
+						<span>AI &amp; LLMS</span>
+						<span class="expertise-inline-separator">|</span>
+						<span>HEALTHCARE</span>
+						<span class="expertise-inline-separator">|</span>
+						<span>ENGINEERING</span>
+					</div>
+				</div>
+			</div>
+            <div class="col-lg-4 order-1 order-lg-2 hero-profile">
+				<div class="profile-frame">
+			    	<img class="author-img" src="images/KaranBhanotPhoto.png" alt="Portrait of Karan Bhanot">
+				</div>
+				<p class="profile-orgs">RPI &bull; IBM &bull; Norstella</p>
+			</div>
 
+			<!-- Moved Hero Stats Outside -->
+			<div class="col-12 order-3 mt-5">
+				<div class="hero-stats">
+					<div class="stat-card">
+						<div class="d-flex align-items-center mb-3">
+							<div class="stat-icon mb-0 mr-3"><i class="bi bi-robot"></i></div>
+							<div class="stat-kicker mb-0">Agentic Workflows</div>
+						</div>
+						<div class="stat-value">3-4 wks &rarr; 1 wk</div>
+						<div class="stat-label">End-to-End Processing Time</div>
+						<p class="stat-detail">Automated relevant sections of clinical note selection, review, research, prompt engineering, and post-NLP processing with LLM agents, removing deliverable heterogeneity while ensuring quality at scale.</p>
+					</div>
+					<div class="stat-card">
+						<div class="d-flex align-items-center mb-3">
+							<div class="stat-icon mb-0 mr-3"><i class="bi bi-database-fill"></i></div>
+							<div class="stat-kicker mb-0">Clinical Data at Scale</div>
+						</div>
+						<div class="stat-value">50M+</div>
+						<div class="stat-label">Notes queryable per run</div>
+						<p class="stat-detail">Built configurable ingestion across Redshift and OpenSearch so teams can define cohorts dynamically without reworking the pipeline.</p>
+					</div>
+					<div class="stat-card">
+						<div class="d-flex align-items-center mb-3">
+							<div class="stat-icon mb-0 mr-3"><i class="bi bi-cpu-fill"></i></div>
+							<div class="stat-kicker mb-0">Production ML Models</div>
+						</div>
+						<div class="stat-value">20k+</div>
+						<div class="stat-label">Records Processed Weekly</div>
+						<p class="stat-detail">Combined structured data with unstructured clinical notes to engineer features, deploying 3-5 ensemble ML models to pool insights and deliver high, medium, and low confidence predictions.</p>
+					</div>
+					<div class="stat-card">
+						<div class="d-flex align-items-center mb-3">
+							<div class="stat-icon mb-0 mr-3"><i class="bi bi-journal-text"></i></div>
+							<div class="stat-kicker mb-0">Applied AI Research</div>
+						</div>
+						<div class="stat-value">250+</div>
+						<div class="stat-label">Citations on 10+ Papers</div>
+						<p class="stat-detail">Authored contributions spanning real-world healthcare data analysis, synthetic data generation, fairness evaluation, and production-grade software applications.</p>
+					</div>
+				</div>
+			</div>
+				</div>
 			</div>
 		</div>
 		<!-- End Header -->
