@@ -47,6 +47,12 @@
   }
 }
 
+@media (max-width: 575.98px) {
+  .navbar-nav .nav-item::after {
+    display: none;
+  }
+}
+
 li {
   margin-bottom: 10px;
 }
