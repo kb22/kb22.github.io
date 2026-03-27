@@ -31,15 +31,20 @@
 .author-img {
   width: 250px;
   height: 250px;
+  display: block;
   border-radius: 50%;
   border: 1px solid var(--color-white);
-  margin: auto;
+  margin: 0 auto;
 }
 
 @media (max-width: 767px) {
-	.author-img {
-		margin-top: 40px;
-	}
+  .hero-profile {
+    margin-bottom: 24px;
+  }
+
+  .author-img {
+    margin-top: 8px;
+  }
 }
 
 li {
