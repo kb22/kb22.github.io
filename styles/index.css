@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background: #f5f1e8;
   color: #262626;
@@ -22,6 +26,13 @@ a {
 a:hover {
   color: #122858;
   text-decoration: none;
+}
+
+.sticky-nav-wrapper {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: #f5f1e8;
 }
 
 .navbar {
@@ -182,6 +193,7 @@ a:hover {
   background: rgba(255, 255, 255, 0.4);
   border: 1px solid rgba(216, 209, 196, 0.5);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
+  cursor: default;
 }
 
 .stat-card:hover {
@@ -399,4 +411,82 @@ li {
   .nav-links-right {
     align-items: flex-start;
   }
+}
+
+/* Skills Section */
+.skills-grouped {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.skill-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.skill-group-label {
+  color: #1a3f6e;
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.skill-group-items {
+  color: #3f3d39;
+  font-size: 0.96rem;
+  line-height: 1.6;
+}
+
+/* Research Year Headings */
+.research-year {
+  margin-top: 24px;
+  margin-bottom: 10px;
+  color: #1a3f6e;
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 0.92rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+}
+
+.research-year:first-of-type {
+  margin-top: 0;
+}
+
+/* Footer */
+.site-footer {
+  padding: 32px 0 24px;
+  border-top: 1px solid #d8d1c4;
+  margin-top: 48px;
+  text-align: center;
+}
+
+.footer-text {
+  margin: 0 0 12px;
+  color: #716c63;
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 0.88rem;
+  letter-spacing: 0.08em;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links a {
+  color: #716c63;
+  font-size: 1.1rem;
+  transition: color 0.2s ease;
+}
+
+.footer-links a:hover {
+  color: #1a3f6e;
 }
