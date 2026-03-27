@@ -209,10 +209,11 @@ a:hover {
   margin-bottom: 8px;
   color: #124734;
   font-family: "IBM Plex Sans", sans-serif;
-  font-size: 2.8rem;
+  font-size: clamp(2rem, 7vw, 2.8rem);
   font-weight: 600;
-  line-height: 1;
-  white-space: nowrap;
+  line-height: 1.1;
+  white-space: normal;
+  word-wrap: break-word;
 }
 
 .stat-label {
