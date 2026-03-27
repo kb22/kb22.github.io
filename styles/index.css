@@ -150,7 +150,7 @@ a:hover {
   display: flex;
   align-items: center;
   gap: 24px;
-  color: #124734;
+  color: #1a3f6e;
   font-family: "IBM Plex Mono", monospace;
   font-size: 0.95rem;
   font-weight: 600;
@@ -191,7 +191,7 @@ a:hover {
 
 .stat-icon {
   font-size: 1.8rem;
-  color: #124734;
+  color: #1a3f6e;
   line-height: 1;
 }
 
@@ -207,7 +207,7 @@ a:hover {
 
 .stat-value {
   margin-bottom: 8px;
-  color: #124734;
+  color: #1a3f6e;
   font-family: "IBM Plex Sans", sans-serif;
   font-size: clamp(2rem, 7vw, 2.8rem);
   font-weight: 600;
