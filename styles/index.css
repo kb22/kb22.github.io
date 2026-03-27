@@ -274,6 +274,8 @@ a:hover {
 
 h2 {
   margin-bottom: 18px;
+  padding-top: 28px;
+  border-top: 1px solid #d8d1c4;
   color: #1d1d1d;
   font-family: "IBM Plex Mono", monospace;
   font-size: 1rem;
