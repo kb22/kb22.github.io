@@ -33,7 +33,7 @@
   height: 250px;
   display: block;
   border-radius: 50%;
-  border: 1px solid var(--color-white);
+  border: 1px solid #ffffff;
   margin: 0 auto;
 }
 
