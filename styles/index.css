@@ -364,10 +364,12 @@ li {
   }
 
   .impact-heading {
-    margin-bottom: 14px;
-    font-size: 0.9rem;
-    letter-spacing: 0.13em;
-    line-height: 1.4;
+    margin-bottom: 16px;
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 0.14em;
+    line-height: 1.45;
+    color: #1d1d1d;
   }
 
   .hero-meta-row {
