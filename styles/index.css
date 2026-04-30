@@ -180,7 +180,10 @@ a:hover {
 }
 
 .impact-heading {
-  margin-bottom: 18px;
+  display: block;
+  position: relative;
+  z-index: 2;
+  margin: 0 0 18px;
   padding-top: 0;
   border-top: 0;
 }
@@ -364,12 +367,15 @@ li {
   }
 
   .impact-heading {
-    margin-bottom: 16px;
-    font-size: 1rem;
-    font-weight: 600;
-    letter-spacing: 0.14em;
-    line-height: 1.45;
-    color: #1d1d1d;
+    display: block;
+    position: relative;
+    z-index: 2;
+    margin: 0 0 18px;
+    font-size: 1.08rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    line-height: 1.4;
+    color: #111111;
   }
 
   .hero-meta-row {
