@@ -179,6 +179,12 @@ a:hover {
   letter-spacing: 0;
 }
 
+.impact-heading {
+  margin-bottom: 18px;
+  padding-top: 0;
+  border-top: 0;
+}
+
 .hero-stats {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -355,6 +361,13 @@ li {
 @media (max-width: 767px) {
   .navbar-nav .nav-item::after {
     display: none;
+  }
+
+  .impact-heading {
+    margin-bottom: 14px;
+    font-size: 0.9rem;
+    letter-spacing: 0.13em;
+    line-height: 1.4;
   }
 
   .hero-meta-row {
